@@ -42,10 +42,11 @@ const longestCountry = (...paises) => {
         const element = paises[i].length;
         paisesLength.push(element)
     }
-
+  //  console.log("el numero es " + paisesLength);
     const max = Math.max(...paisesLength)
-
+  // console.log("El max es " + max)
     const indexMax = paisesLength.indexOf(max)
+    //console.log("El index max es "+ indexMax)
 
     const countryMax = paises[paisesLength.indexOf(max)]
 
